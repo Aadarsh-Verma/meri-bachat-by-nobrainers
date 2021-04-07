@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Inside products</h2>
+    <h2>{{ amazon.name }}</h2>
+    <h2>{{ amazon.price }}</h2>
+    <table class="table">
+        <tr>
+            <td>Amazon</td>
+            <td>{{ amazon.name }}</td>
+            <td>{{ amazon.price }}</td>
+        </tr>
+        <tr>
+            <td>flipkart</td>
+            <td>{{ flipkart.name }}</td>
+            <td>{{ flipkart.price }}</td>
+        </tr>
+        <tr>
+            <td>Tata</td>
+            <td>{{ tata.name }}</td>
+            <td>{{ tata.price }}</td>
+        </tr>
+    </table>
+{% endblock content %}
