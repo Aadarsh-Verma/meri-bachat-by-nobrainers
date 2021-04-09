@@ -1,0 +1,21 @@
+.row{
+    width: 1140px;
+    height: 200px;
+    margin: 0 auto;
+    align-content: center;
+}
+.left-image{
+    float: left;
+    height: 200px;
+    width: 95px;
+    margin-right: 50px;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}

@@ -166,7 +166,12 @@
                         </div>
                     </header>
 
-
+                    <form method="post">
+                        {% csrf_token %}
+                        <input type="text" name="category">
+                        <input type="text" name="prd_name_list">
+                        <input type="submit" class="btn btn-primary">
+                    </form>
                     <section class="about-meribachat">
                         <div class="container">
                             <h1 class="section-heading">About Meri Bachat</h1>

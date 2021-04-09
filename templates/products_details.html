@@ -1,0 +1,8 @@
+ {% for meta in metadata %}
+            {% for image in meta.images %}
+                <img src="{{ image }}" alt="not render">
+            {% endfor %}
+            {% for review in meta.reviews %}
+                <h3>{{ review }}</h3>
+            {% endfor %}
+        {% endfor %}

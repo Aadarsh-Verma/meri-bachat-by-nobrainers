@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+    Inside Product List
+    {% for meta in metadata %}
+        <div class="row clearfix">
+            <figure class="image_fig">
+                <a href="{% url 'index' meta.mobile.id%}">
+                <img src="{{ meta.images.0 }}" alt="Not rendered" class="left-image">
+                </a>
+            </figure>
+            <div class="right">
+                <h4>{{ meta.mobile.name }}</h4>
+                <div class="specs">
+                    {% for spec in meta.specs %}
+                        <h6>{{ spec }}</h6>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
