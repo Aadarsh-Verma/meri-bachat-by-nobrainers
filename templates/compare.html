@@ -6,57 +6,6 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static 'css/price.css' %}">
 
-    <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #32abff">
-        <div class="container">
-            <div class="navbar-header">
-                <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button> -->
-                <a class="navbar-brand" href="/"
-                   style="color:white; font-size:30px;font-weight:bold;font-family:'Noto Sans', sans-serif; ">
-                    <img alt="Brand" src="../static/synkrinoIcon.png"><a class="navbar-brand"
-                                                                         href="/"
-                                                                         style="color:white; font-size:30px;font-weight:bold;font-family:'Noto Sans', sans-serif; ">Synkrino</a>
-                </a>
-            </div>
-
-            <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">About</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-hover" data-toggle="dropdown" role="button" aria-haspopup="true"
-                            aria-expanded="false">Services<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Design</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Consulting</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Contact</a></li>
-                    <li>
-                        <form class="navbar-form navbar-left" action="/hello" method="POST" name="form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search for Products"
-                                    name="search_item_field">
-                            </div>
-                            <button type="submit" class="btn btn-default" onclick="loading();">Submit</button>
-
-                        </form>
-                    </li>
-                    <li>
-                        <button type="button" class="btn btn-default" data-toggle="modal"
-                            data-target="#modalLRForm">Login/Signup</button>
-                    </li>
-                </ul>
-
-
-            </div> -->
-
-        </div>
-    </nav>
     <br><br><br><!-- <br style="line-height:50%;"> -->
     <!-- Navbar ends here  -->
     <!-- The inner content starts here -->
@@ -83,15 +32,11 @@
     <div class="columns">
         <ul class="price">
             <li class="header">FLIPKART</li>
-            <!-- <li class="grey">$ 24.99 / year</li>
-            <li>25GB Storage</li> -->
+
             <li><img src="{% static 'images/flipkart.png' %}"/></li>
             <li class="grey1">{{ thread_data.flipkart.name }}</li>
             <li class="grey1">{{ thread_data.flipkart.price }}</li>
-            <!-- <li>25 Emails</li>
-            <li>25 Domains</li>
-            <li>2GB Bandwidth</li> -->
-            <li class="grey"><a href="{{ flipkart_url }}" class="button">Buy Now</a></li>
+            <li class="grey"><a href="{{ thread_data.flipkart.prd_url }}" class="button">Buy Now</a></li>
         </ul>
     </div>
 
@@ -100,7 +45,7 @@
             <li class="header">TATA CLIQ</li>
 
             <!-- <li>50GB Storage</li> -->
-            <li><img src="{% static 'images/tata_click.png' %}"/></li>
+            <li><img src="{% static 'images/tata_click.png' %}" style="height: 297px;width: 400px"/></li>
             <li class="grey1">{{ thread_data.tata.name }}</li>
             <li class="grey1">{{ thread_data.tata.price }}</li>
             <!-- <li>50 Emails</li>

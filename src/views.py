@@ -28,6 +28,7 @@ def compare_util(request, name):
     t3.join()
 
     print(thread_data)
+
     context = {
         'thread_data': thread_data,
         'prd_name': name,
@@ -58,14 +59,14 @@ def compare(request, name):
     except:
         tata = None
 
-    context = {
+    compare_context = {
         'amazon': amazon,
         'flipkart': flipkart,
         'tata': tata,
         'prd_name': name,
         'time_taken': time.time() - tick,
     }
-    return render(request, 'compare.html', context)
+    return render(request, 'compare.html', compare_context)
 
 
 def home(request):
@@ -92,6 +93,7 @@ def home(request):
                 metadata = []
                 mobiles = []
                 temp = []
+
                 for scrape in scrape_products:
                     temp.append(get_data_scrape(scrape))
                     mobiles.append(create_product(temp[-1]))
@@ -109,7 +111,8 @@ def home(request):
 def create_product(meta):
     # print(meta)
     return Mobile.objects.create(name=meta['mobile']['name'], category=meta['mobile']['category'],
-                                 price=meta['mobile']['price'], product_url=meta['mobile']['product_url'], reviews=str(meta['reviews']),
+                                 price=meta['mobile']['price'], product_url=meta['mobile']['product_url'],
+                                 reviews=str(meta['reviews']),
                                  description=meta['mobile']['description'], specs=str(meta['specs']),
                                  images=str(meta['images']))
 
@@ -117,7 +120,6 @@ def create_product(meta):
 def index(request, pk):
     mobiles = Mobile.objects.get(pk=pk)
     metadata = get_data(mobiles)
-
     context = {
         'mobiles': mobiles,
         'metadata': metadata,

@@ -1,5 +1,6 @@
 from time import sleep
 from selenium import webdriver
+from fuzzywuzzy import process
 
 thread_data = {}
 
@@ -72,6 +73,22 @@ def full_flipkart(prd_name):
     return product
 
 
+def fuzzy(string1, list1):
+    string1 = [string1]
+    Ratios = [process.extract(x, list1) for x in string1]
+    ans = []
+    for ratio in Ratios:
+        ans.append(ratio)
+    # print(ans[0][0][0])
+
+    index = 0
+    for i in range(0, len(list1)):
+        if str(list1[i]) == str(ans[0][0][0]):
+            index = i
+            break
+    return index
+
+
 def util_flipkart(prd_name):
     option = webdriver.ChromeOptions()
     option.add_argument('headless')
@@ -82,16 +99,38 @@ def util_flipkart(prd_name):
     sleep(0.2)
     components = driver.find_elements_by_class_name('_1fQZEK')
     context = {}
+    fuzzy_names = []
     for component in components:
         try:
             names = component.find_element_by_class_name('_4rR01T').text
-            price = component.find_element_by_class_name('_30jeq3').text[1:]
-            context['name'] = names
-            context['price'] = price
-            break
-        except Exception as e:
-            print("exc")
+            fuzzy_names.append(names)
+        except:
             continue
+    index = fuzzy(prd_name, fuzzy_names)
+    try:
+        names = components[index].find_element_by_class_name('_4rR01T').text
+        price = components[index].find_element_by_class_name('_30jeq3').text[1:]
+        prd_link = components[index].get_attribute('href')
+        context['name'] = names
+        context['price'] = price
+        context['prd_link'] = prd_link
+
+    except:
+        for component in components:
+            try:
+                names = component.find_element_by_class_name('_4rR01T').text
+                price = component.find_element_by_class_name('_30jeq3').text[1:]
+                prd_link = component.get_attribute('href')
+                context['name'] = names
+                context['price'] = price
+                context['prd_link'] = prd_link
+                # print(context)
+                break
+            except Exception as e:
+                print("exc")
+                continue
+
+
     driver.close()
     thread_data['flipkart'] = context
     return context
@@ -106,16 +145,32 @@ def util_tatacliq(prd_name):
     sleep(0.2)
     components = driver.find_elements_by_class_name('ProductModule__base')
     context = {}
+    fuzzy_names = []
     for component in components:
         try:
             names = component.find_element_by_class_name('ProductDescription__description').text
-            price = component.find_element_by_class_name('ProductDescription__discount').text
-            context['name'] = names
-            context['price'] = price
-            break
-        except Exception as e:
-            print("exception occured")
+            fuzzy_names.append(names)
+        except:
             continue
+    index = fuzzy(prd_name, fuzzy_names)
+    try:
+        names = components[index].find_element_by_class_name('ProductDescription__description').text
+        price = components[index].find_element_by_class_name('ProductDescription__discount').text
+        context['name'] = names
+        context['price'] = price
+
+    except Exception as e:
+        print("exception occured")
+        for component in components:
+            try:
+                names = component.find_element_by_class_name('ProductDescription__description').text
+                price = component.find_element_by_class_name('ProductDescription__discount').text
+                context['name'] = names
+                context['price'] = price
+                break
+            except Exception as e:
+                print("exception occured")
+                continue
 
     driver.close()
     thread_data['tata'] = context
@@ -154,13 +209,15 @@ def util_amazon(prd_name):
 def get_data(mob):
     image_list = mob.images
     images_list = image_list[1:-1].split(",")
-    images = [images_list[0][1:-1]]
+    images = [images_list[0][1:-1].replace('image/128/128', 'image/416/416')]
     for i in range(1, len(images_list)):
-        images.append(images_list[i][2:-1])
+        images.append(images_list[i][2:-1].replace('image/128/128', 'image/416/416'))
 
     reviews = mob.reviews[1:-1].split(",")
-    specs = mob.specs[1:-1].split(",")
-
+    temp_specs = mob.specs[1:-1].split(",")
+    specs = [temp_specs[0][1:-1]]
+    for i in range(1, len(temp_specs)):
+        specs.append(temp_specs[i][2:-1])
     context = {
         'images': images,
         'reviews': reviews,
@@ -172,7 +229,9 @@ def get_data(mob):
 
 def get_data_scrape(mob):
     images_list = mob['images']
-    images = images_list
+    images = []
+    for image in images_list:
+        images.append(image.replace('image/128/128', 'image/416/416'))
     reviews = mob['reviews']
     specs = mob['specs']
 
