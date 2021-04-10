@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
-    Inside Product List
+    <br><br>
+    <div class="main_div">
     {% for meta in metadata %}
         <div class="row clearfix">
             <figure class="image_fig">
@@ -10,12 +11,15 @@
             </figure>
             <div class="right">
                 <h4>{{ meta.mobile.name }}</h4>
+                <p>Rating {{ meta.mobile.rating }}</p>
+                <p>Price {{ meta.mobile.price }} Rs</p>
                 <div class="specs">
                     {% for spec in meta.specs %}
                         <h6>{{ spec }}</h6>
                     {% endfor %}
                 </div>
             </div>
-        </div>
+        </div> <br><br>
     {% endfor %}
+    </div>
 {% endblock %}

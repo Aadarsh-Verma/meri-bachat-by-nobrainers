@@ -17,12 +17,11 @@ from django.contrib import admin
 from django.urls import path
 from django.views.generic import TemplateView
 
-from src.views import home, index, list_form
+from src.views import home, index, compare, compare_util
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',home,name='home'),
-    path('list/',list_form,name='list'),
     path('index/<pk>',index,name='index'),
-    path('sample/',TemplateView.as_view(template_name='products_details.html'),name='detail')
+    path('compare/<name>',compare_util,name='compare'),
 ]

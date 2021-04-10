@@ -22,74 +22,7 @@
 
     <body class="skin-light">
 
-        <!--Main Navigation-->
-        <header>
 
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-md navbar-light fixed-top scrolling-navbar">
-                <div class="container-fluid">
-
-                    <!-- Brand -->
-                    <a class="navbar-brand" href="https://mdbecommerce.com/">
-                        <i class="fab fa-mdb fa-3x" alt="mdb logo"></i>
-                    </a>
-
-                    <!-- Collapse button -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-                            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <!-- Links -->
-                    <div class="collapse navbar-collapse" id="basicExampleNav">
-
-                        <!-- Right -->
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a href="#!" class="nav-link navbar-link-2 waves-effect">
-                                    <span class="badge badge-pill red">1</span>
-                                    <i class="fas fa-shopping-cart pl-0"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle waves-effect" id="navbarDropdownMenuLink3"
-                                   data-toggle="dropdown"
-                                   aria-haspopup="true" aria-expanded="true">
-                                    <i class="united kingdom flag m-0"></i>
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#!">Action</a>
-                                    <a class="dropdown-item" href="#!">Another action</a>
-                                    <a class="dropdown-item" href="#!">Something else here</a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#!" class="nav-link waves-effect">
-                                    Shop
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#!" class="nav-link waves-effect">
-                                    Contact
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#!" class="nav-link waves-effect">
-                                    Sign in
-                                </a>
-                            </li>
-                            <li class="nav-item pl-2 mb-2 mb-md-0">
-                                <a href="#!" type="button"
-                                   class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light">Sign
-                                    up</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!-- Links -->
-                </div>
-            </nav>
-            <!-- Navbar -->
 
             <div class="jumbotron color-grey-light mt-70">
                 <div class="d-flex align-items-center h-100">
@@ -188,24 +121,10 @@
 
                             <h5>{{ mobiles.name }}</h5>
                             <p class="mb-2 text-muted text-uppercase small">{{ mobiles.category }}</p>
-                            <ul class="rating">
-                                <li>
-                                    <i class="fas fa-star fa-sm text-primary"></i>
-                                </li>
-                                <li>
-                                    <i class="fas fa-star fa-sm text-primary"></i>
-                                </li>
-                                <li>
-                                    <i class="fas fa-star fa-sm text-primary"></i>
-                                </li>
-                                <li>
-                                    <i class="fas fa-star fa-sm text-primary"></i>
-                                </li>
-                                <li>
-                                    <i class="far fa-star fa-sm text-primary"></i>
-                                </li>
-                            </ul>
-                            <p><span class="mr-1"><strong>{{ mobiles.price }}</strong></span></p>
+                            <p class="rating">
+                                {{ metadata.mobiles.rating }}
+                            </p>
+                            <p><span class="mr-1"><strong><a href="{% url 'compare' mobiles.name %}">Compare</a></strong></span></p>
                             <p class="pt-1">{{ mobiles.description }}</p>
                             <div class="table-responsive">
                                 <table class="table table-sm table-borderless mb-0">
@@ -252,30 +171,7 @@
                         <div class="tab-pane fade show active" id="description" role="tabpanel"
                              aria-labelledby="description-tab">
                             <h5>Product Description</h5>
-                            <p class="small text-muted text-uppercase mb-2">Shirts</p>
-                            <ul class="rating">
-                                <li>
-                                    <i class="fas fa-star fa-sm text-primary"></i>
-                                </li>
-                                <li>
-                                    <i class="fas fa-star fa-sm text-primary"></i>
-                                </li>
-                                <li>
-                                    <i class="fas fa-star fa-sm text-primary"></i>
-                                </li>
-                                <li>
-                                    <i class="fas fa-star fa-sm text-primary"></i>
-                                </li>
-                                <li>
-                                    <i class="far fa-star fa-sm text-primary"></i>
-                                </li>
-                            </ul>
-                            <h6>12.99 $</h6>
-                            <p class="pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sapiente
-                                illo. Sit
-                                error voluptas repellat rerum quidem, soluta enim perferendis voluptates laboriosam.
-                                Distinctio,
-                                officia quis dolore quos sapiente tempore alias.</p>
+                            <p class="pt-1">{{ mobiles.description }}</p>
                         </div>
                         <div class="tab-pane fade" id="info" role="tabpanel" aria-labelledby="info-tab">
                             <h5>Additional Information</h5>
@@ -291,8 +187,8 @@
                             </table>
                         </div>
                         <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
-                            <h5>1 review for Fantasy T-shirt</h5>
-                            <table>
+                            <h5>Product Review</h5>
+                            <table class="table">
                                 {% for review in metadata.reviews %}
                                     <tr>
                                         <td>{{ review }}</td>
@@ -359,317 +255,14 @@
 
                 <hr>
 
-                <!--Section: Block Content-->
-                <section class="text-center">
 
-                    <h4 class="text-center my-5"><strong>Related products</strong></h4>
-
-                    <!-- Grid row -->
-                    <div class="row">
-
-                        <!-- Grid column -->
-                        <div class="col-md-6 col-lg-3 mb-5">
-
-                            <!-- Card -->
-                            <div class="">
-
-                                <div class="view zoom overlay z-depth-2 rounded">
-                                    <img class="img-fluid w-100"
-                                         src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12a.jpg"
-                                         alt="Sample">
-                                    <a href="#!">
-                                        <div class="mask">
-                                            <img class="img-fluid w-100"
-                                                 src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg">
-                                            <div class="mask rgba-black-slight"></div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div class="pt-4">
-
-                                    <h5>{{ mobiles.name }}</h5>
-                                    <p><span><strong>$17.99</strong></span></p>
-
-                                </div>
-
-                            </div>
-                            <!-- Card -->
-
-                        </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-md-6 col-lg-3 mb-5">
-
-                            <!-- Card -->
-                            <div class="">
-
-                                <div class="view zoom overlay z-depth-2 rounded">
-                                    <img class="img-fluid w-100"
-                                         src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13a.jpg"
-                                         alt="Sample">
-                                    <a href="#!">
-                                        <div class="mask">
-                                            <img class="img-fluid w-100"
-                                                 src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13.jpg">
-                                            <div class="mask rgba-black-slight"></div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div class="pt-4">
-
-                                    <h5>Red hoodie</h5>
-                                    <p><span><strong>$35.99</strong></span></p>
-
-                                </div>
-
-                            </div>
-                            <!-- Card -->
-
-                        </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-md-6 col-lg-3 mb-5">
-
-                            <!-- Card -->
-                            <div class="">
-
-                                <div class="view zoom overlay z-depth-2 rounded">
-                                    <img class="img-fluid w-100"
-                                         src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14a.jpg"
-                                         alt="Sample">
-                                    <h4 class="mb-0"><span class="badge badge-primary badge-pill badge-news">Sale</span>
-                                    </h4>
-                                    <a href="#!">
-                                        <div class="mask">
-                                            <img class="img-fluid w-100"
-                                                 src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14.jpg">
-                                            <div class="mask rgba-black-slight"></div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div class="pt-4">
-
-                                    <h5>Grey sweater</h5>
-                                    <p><span class="text-danger mr-1"><strong>$21.99</strong></span><span
-                                            class="text-grey"><strong><s>$36.99</s></strong></span></p>
-
-                                </div>
-
-                            </div>
-                            <!-- Card -->
-
-                        </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-md-6 col-lg-3 mb-5">
-
-                            <!-- Card -->
-                            <div class="">
-
-                                <div class="view zoom overlay z-depth-2 rounded">
-                                    <img class="img-fluid w-100"
-                                         src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15a.jpg"
-                                         alt="Sample">
-                                    <a href="#!">
-                                        <div class="mask">
-                                            <img class="img-fluid w-100"
-                                                 src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14.jpg">
-                                            <div class="mask rgba-black-slight"></div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div class="pt-4">
-
-                                    <h5>Black denim jacket</h5>
-                                    <p><strong>$99.99</strong></p>
-
-                                </div>
-
-                            </div>
-                            <!-- Card -->
-
-                        </div>
-                        <!-- Grid column -->
-
-                    </div>
-                    <!-- Grid row -->
-
-                </section>
-                <!--Section: Block Content-->
 
             </div>
         </main>
         <!--Main layout-->
 
 
-        <!-- Footer -->
-        <footer class="page-footer font-small elegant-color">
 
-            <div class="color-primary">
-                <div class="container">
-
-                    <!-- Grid row-->
-                    <div class="row py-4 d-flex align-items-center">
-
-                        <!-- Grid column -->
-                        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                            <h6 class="mb-0">Get connected with us on social networks!</h6>
-                        </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-md-6 col-lg-7 text-center text-md-right">
-
-                            <!-- Facebook -->
-                            <a class="fb-ic">
-                                <i class="fab fa-facebook-f white-text mr-4"> </i>
-                            </a>
-                            <!-- Twitter -->
-                            <a class="tw-ic">
-                                <i class="fab fa-twitter white-text mr-4"> </i>
-                            </a>
-                            <!-- Google +-->
-                            <a class="gplus-ic">
-                                <i class="fab fa-google-plus-g white-text mr-4"> </i>
-                            </a>
-                            <!--Linkedin -->
-                            <a class="li-ic">
-                                <i class="fab fa-linkedin-in white-text mr-4"> </i>
-                            </a>
-                            <!--Instagram-->
-                            <a class="ins-ic">
-                                <i class="fab fa-instagram white-text"> </i>
-                            </a>
-
-                        </div>
-                        <!-- Grid column -->
-
-                    </div>
-                    <!-- Grid row-->
-
-                </div>
-            </div>
-
-            <!-- Footer Links -->
-            <div class="container text-center text-md-left pt-4 pt-md-5">
-
-                <!-- Grid row -->
-                <div class="row mt-1 mt-md-0 mb-4 mb-md-0">
-
-                    <!-- Grid column -->
-                    <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
-
-                        <!-- Links -->
-                        <h5>About me</h5>
-                        <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
-
-                        <p class="foot-desc mb-0">Here you can use rows and columns to organize your footer content.
-                            Lorem
-                            ipsum dolor sit amet,
-                            consectetur
-                            adipisicing elit.</p>
-
-                    </div>
-                    <!-- Grid column -->
-
-                    <hr class="clearfix w-100 d-md-none">
-
-                    <!-- Grid column -->
-                    <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
-
-                        <!-- Links -->
-                        <h5>Products</h5>
-                        <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
-
-                        <ul class="list-unstyled foot-desc">
-                            <li class="mb-2">
-                                <a href="#!">MDBootstrap</a>
-                            </li>
-                            <li class="mb-2">
-                                <a href="#!">MDWordPress</a>
-                            </li>
-                            <li class="mb-2">
-                                <a href="#!">BrandFlow</a>
-                            </li>
-                            <li class="mb-2">
-                                <a href="#!">Bootstrap Angular</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!-- Grid column -->
-
-                    <hr class="clearfix w-100 d-md-none">
-
-                    <!-- Grid column -->
-                    <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
-
-                        <!-- Links -->
-                        <h5>Useful links</h5>
-                        <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
-
-                        <ul class="list-unstyled foot-desc">
-                            <li class="mb-2">
-                                <a href="#!">Your Account</a>
-                            </li>
-                            <li class="mb-2">
-                                <a href="#!">Become an Affiliate</a>
-                            </li>
-                            <li class="mb-2">
-                                <a href="#!">Shipping Rates</a>
-                            </li>
-                            <li class="mb-2">
-                                <a href="#!">Help</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!-- Grid column -->
-
-                    <hr class="clearfix w-100 d-md-none">
-
-                    <!-- Grid column -->
-                    <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
-
-                        <!-- Links -->
-                        <h5>Contacts</h5>
-                        <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
-
-                        <ul class="fa-ul foot-desc ml-4">
-                            <li class="mb-2"><span class="fa-li"><i class="far fa-map"></i></span>New York, Avenue
-                                Street 10
-                            </li>
-                            <li class="mb-2"><span class="fa-li"><i class="fas fa-phone-alt"></i></span>042 876 836 908
-                            </li>
-                            <li class="mb-2"><span class="fa-li"><i class="far fa-envelope"></i></span>company@example.com
-                            </li>
-                            <li><span class="fa-li"><i class="far fa-clock"></i></span>Monday - Friday: 10-17</li>
-                        </ul>
-
-                    </div>
-                    <!-- Grid column -->
-
-                </div>
-                <!-- Grid row -->
-
-            </div>
-            <!-- Footer Links -->
-
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">© 2020 Copyright:
-                <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-            </div>
-            <!-- Copyright -->
-
-        </footer>
-        <!-- Footer -->
 
         <!-- SCRIPTS -->
         <!-- JQuery -->

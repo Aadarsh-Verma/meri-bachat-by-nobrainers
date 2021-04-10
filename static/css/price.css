@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 30px;
+
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 25px;
+}
+
+.price:hover {
+  box-shadow: 8px 10px 12px 6px rgba(0,0,0,0.2);
+
+}
+
+.price .header {
+  background-color:rgb(42, 149, 236);
+  color: white;
+  font-size: 25px;
+  font-family: 'Noto Sans', sans-serif;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+  color: rgb(13, 142, 248);
+  font-family: 'Noto Sans', sans-serif;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.grey1 {
+  background-color: #eee;
+  font-size: 20px;
+  color: rgb(13, 142, 248);
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.button {
+  background-color: white;
+  border: 1px solid rgb(42, 149, 236);
+  border-radius: 18px;
+  color:  rgb(42, 149, 236);
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Noto Sans', sans-serif;
+}
+.button:hover {
+  background-color: rgb(42, 149, 236);
+  border: rgb(42, 149, 236);
+  color:  white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight:bold;
+  font-family: 'Noto Sans', sans-serif;
+}
+.back_home{
+  margin:0 180px;
+  border: 2px solid rgb(42, 149, 236);
+  border-radius: 18px;
+  background-color: white;
+  color: rgb(42, 149, 236);
+  /* padding: 10px 25px; */
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Noto Sans', sans-serif;
+}
+.back_home p a:visited{
+  color:rgb(58, 54, 54);
+}
+.back_home:hover{
+  background-color:rgb(147, 224, 255);
+  color:white;
+
+}
+h2, p{
+  font-size: 18px;
+  font-family: 'Noto Sans', sans-serif;
+  color:rgb(58, 54, 54);
+}
+
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
