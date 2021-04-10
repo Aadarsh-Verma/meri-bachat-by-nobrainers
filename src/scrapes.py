@@ -6,7 +6,9 @@ thread_data = {}
 
 
 def full_flipkart(prd_name):
-    driver = webdriver.Chrome(executable_path='chromedriver.exe')
+    option = webdriver.ChromeOptions()
+    option.headless = True
+    driver = webdriver.Chrome(executable_path='chromedriver.exe', options=option)
     prd_get_url = 'https://www.flipkart.com/search?q={0}&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&page=1'.format(
         prd_name)
     driver.get(prd_get_url)
@@ -19,7 +21,7 @@ def full_flipkart(prd_name):
     for component in components:
         hrefs.append(component.get_attribute('href'))
         num += 1
-        if num == 2:
+        if num == 3:
             break
 
     for component in hrefs:
@@ -130,7 +132,6 @@ def util_flipkart(prd_name):
                 print("exc")
                 continue
 
-
     driver.close()
     thread_data['flipkart'] = context
     return context
@@ -144,6 +145,10 @@ def util_tatacliq(prd_name):
     driver.get(url)
     sleep(0.2)
     components = driver.find_elements_by_class_name('ProductModule__base')
+    print("length of component in tata cliq is" + str(len(components)))
+    if len(components) == 0:
+        thread_data['error_tata'] = 'Product Not Available'
+        return {}
     context = {}
     fuzzy_names = []
     for component in components:
@@ -160,20 +165,22 @@ def util_tatacliq(prd_name):
         context['price'] = price
 
     except Exception as e:
-        print("exception occured")
+        print("exception occured in tata cliz" + str(e))
         for component in components:
             try:
                 names = component.find_element_by_class_name('ProductDescription__description').text
                 price = component.find_element_by_class_name('ProductDescription__discount').text
                 context['name'] = names
                 context['price'] = price
+                print(context)
                 break
             except Exception as e:
-                print("exception occured")
+                print("exception occured in tata cliq" + str(e))
                 continue
 
     driver.close()
     thread_data['tata'] = context
+
     return context
 
 
@@ -186,22 +193,45 @@ def util_amazon(prd_name):
     sleep(0.2)
     # tree = html.fromstring(driver.page_source)
     print("inside driver")
-    titles = driver.find_elements_by_class_name('s-result-item')
+    components = driver.find_elements_by_class_name('s-result-item')
     context = {}
-    for title in titles:
+    fuzzy_names = []
+    print('length of componenet in amazon is' + str(len(components)))
+    for component in components:
         try:
-            div = title.find_element_by_class_name('sg-col-inner')
+            div = component.find_element_by_class_name('sg-col-inner')
             spans = div.find_elements_by_tag_name('h2')
-
             name = spans[0].text
-            price = title.find_element_by_class_name('a-price-whole').text
-            print(str(name) + "=>" + str(price))
-            context['name'] = name
-            context['price'] = price
-            break
-        except Exception as e:
-            print("exc")
+            fuzzy_names.append(name)
+        except:
             continue
+    index = fuzzy(prd_name, fuzzy_names)
+    print(str(fuzzy_names))
+    print("the fuzzy answer is " + str(fuzzy_names[index]))
+    try:
+        div = components[index].find_element_by_class_name('sg-col-inner')
+        spans = div.find_elements_by_tag_name('h2')
+        name = spans[0].text
+        price = components[index].find_element_by_class_name('a-price-whole').text
+        # print(str(name) + "=>" + str(price))
+        context['name'] = name
+        context['price'] = price
+    except:
+        print("amazon => could not get the index product")
+        for component in components:
+            try:
+                div = component.find_element_by_class_name('sg-col-inner')
+                spans = div.find_elements_by_tag_name('h2')
+
+                name = spans[0].text
+                price = component.find_element_by_class_name('a-price-whole').text
+                # print(str(name) + "=>" + str(price))
+                context['name'] = name
+                context['price'] = price
+
+            except Exception as e:
+                print("exc")
+
     thread_data['amazon'] = context
     return context
 

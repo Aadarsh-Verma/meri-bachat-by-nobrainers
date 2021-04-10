@@ -36,22 +36,22 @@
             <li><img src="{% static 'images/flipkart.png' %}"/></li>
             <li class="grey1">{{ thread_data.flipkart.name }}</li>
             <li class="grey1">{{ thread_data.flipkart.price }}</li>
-            <li class="grey"><a href="{{ thread_data.flipkart.prd_url }}" class="button">Buy Now</a></li>
+            <li class="grey"><a href="{{ thread_data.flipkart.prd_link }}" class="button">Buy Now</a></li>
         </ul>
     </div>
 
     <div class="columns">
         <ul class="price">
             <li class="header">TATA CLIQ</li>
-
-            <!-- <li>50GB Storage</li> -->
             <li><img src="{% static 'images/tata_click.png' %}" style="height: 297px;width: 400px"/></li>
+            {% if thread_data.error_tata %}
+                <li class="grey1">Product Not Available</li>
+            {% else %}
             <li class="grey1">{{ thread_data.tata.name }}</li>
             <li class="grey1">{{ thread_data.tata.price }}</li>
-            <!-- <li>50 Emails</li>
-            <li>50 Domains</li>
-            <li>5GB Bandwidth</li> -->
+
             <li class="grey"><a href="{{ paytm_mall_url }}" class="button">Buy Now</a></li>
+            {% endif %}
         </ul>
     </div>
 

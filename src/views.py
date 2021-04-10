@@ -73,8 +73,8 @@ def home(request):
     # Product List
     if request.method == 'POST':
         prd_name_list = request.POST.get('prd_name')
-        category = request.POST.get('category')
-        if prd_name_list and category:
+        # category = request.POST.get('category')
+        if prd_name_list:
             print("inside product list")
             mobiles = Mobile.objects.filter(name__icontains=prd_name_list)
 
@@ -87,7 +87,7 @@ def home(request):
                     'mobiles': mobiles,
                     'metadata': metadata,
                 }
-                print(context)
+                # print(context)
             else:
                 scrape_products = full_flipkart(prd_name_list)
                 metadata = []
