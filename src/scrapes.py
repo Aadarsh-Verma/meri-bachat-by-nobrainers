@@ -6,6 +6,7 @@ thread_data = {}
 
 
 def full_flipkart(prd_name):
+    prd_name = str(prd_name)
     option = webdriver.ChromeOptions()
     option.headless = True
     driver = webdriver.Chrome(executable_path='chromedriver.exe', options=option)
@@ -92,6 +93,8 @@ def fuzzy(string1, list1):
 
 
 def util_flipkart(prd_name):
+    print("Product name is " + prd_name)
+    prd_name = str(prd_name)
     option = webdriver.ChromeOptions()
     option.add_argument('headless')
     driver = webdriver.Chrome(executable_path='chromedriver.exe', options=option)
@@ -138,6 +141,7 @@ def util_flipkart(prd_name):
 
 
 def util_tatacliq(prd_name):
+    prd_name = str(prd_name)
     option = webdriver.FirefoxOptions()
     option.headless = True
     driver = webdriver.Firefox(executable_path='geckodriver.exe', options=option)

@@ -11,8 +11,7 @@
     <!-- The inner content starts here -->
 
     <p style="text-align:center">We scraped out these resuts for <span
-            style="color:rgb(42, 149, 236)">{{ prd_name }}</span> in about <span
-            style="color:rgb(42, 149, 236)">{{ time_taken }}</span> seconds.</p>
+            style="color:rgb(42, 149, 236)">{{ prd_name }}</span></p>
 
     <div class="columns">
         <ul class="price">
@@ -22,9 +21,7 @@
             <li><img src="{% static 'images/amazon.png' %}"/></li>
             <li class="grey1">{{ thread_data.amazon.name }}</li>
             <li class="grey1">{{ thread_data.amazon.price }}</li>
-            <!-- <li>10 Emails</li>
-            <li>10 Domains</li>
-            <li>1GB Bandwidth</li> -->
+
             <li class="grey"><a href="{{ amazon_url }}" class="button">Buy Now</a></li>
         </ul>
     </div>
@@ -44,14 +41,12 @@
         <ul class="price">
             <li class="header">TATA CLIQ</li>
             <li><img src="{% static 'images/tata_click.png' %}" style="height: 297px;width: 400px"/></li>
-            {% if thread_data.error_tata %}
-                <li class="grey1">Product Not Available</li>
-            {% else %}
-            <li class="grey1">{{ thread_data.tata.name }}</li>
-            <li class="grey1">{{ thread_data.tata.price }}</li>
 
-            <li class="grey"><a href="{{ paytm_mall_url }}" class="button">Buy Now</a></li>
-            {% endif %}
+                <li class="grey1">{{ thread_data.tata.name }}</li>
+                <li class="grey1">{{ thread_data.tata.price }}</li>
+
+                <li class="grey"><a href="{{ paytm_mall_url }}" class="button">Buy Now</a></li>
+
         </ul>
     </div>
 
