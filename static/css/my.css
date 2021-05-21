@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main_div{
+    margin-left: 50px;
+}
+.row{
+    width: 1140px;
+    height: 200px;
+    margin-left: 100px;
+}
+
+.price-tag{
+    position: absolute;
+    right: 30%;
+    float: right;
+    color: orangered;
+    font-size: 18px;
+}
+.left-image{
+    align-content: flex-start;
+    margin-left: 100px;
+    height: 200px;
+    width: 95px;
+    margin-right: 50px;
+}
+
+.specs{
+    font-size: 15px;
+    color: #555;
+}
+
+p{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+    margin-bottom: 15px;
+}

@@ -2029,3 +2029,269 @@ JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/
 JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
 * Can't use WebGL in headless mode (https://bugzil.la/1375585).
 1618132580451	Marionette	INFO	Stopped listening on port 59200
+1618134096698	geckodriver	INFO	Listening on 127.0.0.1:59697
+1618134099681	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\aadar\\AppData\\Local\\Temp\\rust_mozprofileTx12O1"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618134107343	Marionette	INFO	Listening on port 59734
+1618134107629	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://assets.adobedtm.com/9fd06d4068c619c47b289b9c496761efd086a233/satelliteLib-5768eb8c6d43533f225815e1e41f7be236249910.js, line 6: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://assets.adobedtm.com/9fd06d4068c619c47b289b9c496761efd086a233/satelliteLib-5768eb8c6d43533f225815e1e41f7be236249910.js, line 6: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.tatacliq.com/staticweb/6ba00239c4eti2151b1ef3a7853ee7cd0, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+Exiting due to channel error.
+onette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\aadar\\AppData\\Local\\Temp\\rust_mozprofiledz7SXz"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618134202458	Marionette	INFO	Listening on port 59911
+1618134202797	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://assets.adobedtm.com/9fd06d4068c619c47b289b9c496761efd086a233/satelliteLib-5768eb8c6d43533f225815e1e41f7be236249910.js, line 6: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://assets.adobedtm.com/9fd06d4068c619c47b289b9c496761efd086a233/satelliteLib-5768eb8c6d43533f225815e1e41f7be236249910.js, line 6: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.tatacliq.com/staticweb/6ba00239c4eti2151b1ef3a7853ee7cd0, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1618134207352	Marionette	INFO	Stopped listening on port 59911
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1618135417755	geckodriver	INFO	Listening on 127.0.0.1:60373
+1618135421742	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\aadar\\AppData\\Local\\Temp\\rust_mozprofilerOXwz5"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618135426044	Marionette	INFO	Listening on port 60401
+1618135426526	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://assets.adobedtm.com/9fd06d4068c619c47b289b9c496761efd086a233/satelliteLib-5768eb8c6d43533f225815e1e41f7be236249910.js, line 6: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://assets.adobedtm.com/9fd06d4068c619c47b289b9c496761efd086a233/satelliteLib-5768eb8c6d43533f225815e1e41f7be236249910.js, line 6: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.tatacliq.com/staticweb/6ba00239c4eti2151b1ef3a7853ee7cd0, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+Exiting due to channel error.
+1619453994726	geckodriver	INFO	Listening on 127.0.0.1:12018
+1619453997744	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\aadar\\AppData\\Local\\Temp\\rust_mozprofileZ9X2Z0"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619454002398	Marionette	INFO	Listening on port 12049
+1619454002517	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://assets.adobedtm.com/9fd06d4068c619c47b289b9c496761efd086a233/satelliteLib-5768eb8c6d43533f225815e1e41f7be236249910.js, line 6: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://assets.adobedtm.com/9fd06d4068c619c47b289b9c496761efd086a233/satelliteLib-5768eb8c6d43533f225815e1e41f7be236249910.js, line 6: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.tatacliq.com/staticweb/e78fa910979ti2151b1ef3a7853ee7cd0, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1619454021500	Marionette	INFO	Stopped listening on port 12049
+1620283537124	geckodriver	INFO	Listening on 127.0.0.1:51257
+1620283540173	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\aadar\\AppData\\Local\\Temp\\rust_mozprofile7BST6V"
+*** You are running in headless mode.
+1620283542504	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1620283544087	Marionette	INFO	Listening on port 51287
+1620283544522	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://assets.adobedtm.com/9fd06d4068c619c47b289b9c496761efd086a233/satelliteLib-5768eb8c6d43533f225815e1e41f7be236249910.js, line 6: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://assets.adobedtm.com/9fd06d4068c619c47b289b9c496761efd086a233/satelliteLib-5768eb8c6d43533f225815e1e41f7be236249910.js, line 6: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.tatacliq.com/staticweb/cc34fb23d9cti217896746f9e42b665e4, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1620283549863	Marionette	INFO	Stopped listening on port 51287
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
+1620283639691	geckodriver	INFO	Listening on 127.0.0.1:51549
+1620283642653	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\aadar\\AppData\\Local\\Temp\\rust_mozprofileMqgONF"
+*** You are running in headless mode.
+1620283644071	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1620283646865	Marionette	INFO	Listening on port 51590
+1620283646941	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://assets.adobedtm.com/9fd06d4068c619c47b289b9c496761efd086a233/satelliteLib-5768eb8c6d43533f225815e1e41f7be236249910.js, line 6: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://assets.adobedtm.com/9fd06d4068c619c47b289b9c496761efd086a233/satelliteLib-5768eb8c6d43533f225815e1e41f7be236249910.js, line 6: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.tatacliq.com/staticweb/cc34fb23d9cti217896746f9e42b665e4, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1620283650158	Marionette	INFO	Stopped listening on port 51590
+1620283677948	geckodriver	INFO	Listening on 127.0.0.1:51773
+1620283680545	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\aadar\\AppData\\Local\\Temp\\rust_mozprofileq5hdlo"
+*** You are running in headless mode.
+1620283682023	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1620283685165	Marionette	INFO	Listening on port 51814
+1620283685305	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://assets.adobedtm.com/9fd06d4068c619c47b289b9c496761efd086a233/satelliteLib-5768eb8c6d43533f225815e1e41f7be236249910.js, line 6: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://assets.adobedtm.com/9fd06d4068c619c47b289b9c496761efd086a233/satelliteLib-5768eb8c6d43533f225815e1e41f7be236249910.js, line 6: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.tatacliq.com/staticweb/cc34fb23d9cti217896746f9e42b665e4, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1620283689435	Marionette	INFO	Stopped listening on port 51814
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+1620311526681	geckodriver	INFO	Listening on 127.0.0.1:52139
+1620311529235	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\aadar\\AppData\\Local\\Temp\\rust_mozprofile2TQImH"
+*** You are running in headless mode.
+1620311532284	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1620311535575	Marionette	INFO	Listening on port 52180
+1620311536124	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://assets.adobedtm.com/9fd06d4068c619c47b289b9c496761efd086a233/satelliteLib-5768eb8c6d43533f225815e1e41f7be236249910.js, line 6: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://assets.adobedtm.com/9fd06d4068c619c47b289b9c496761efd086a233/satelliteLib-5768eb8c6d43533f225815e1e41f7be236249910.js, line 6: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.tatacliq.com/staticweb/cc34fb23d9cti217896746f9e42b665e4, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1620311542845	Marionette	INFO	Stopped listening on port 52180
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1620495376244	geckodriver	INFO	Listening on 127.0.0.1:1565
+1620495379265	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\aadar\\AppData\\Local\\Temp\\rust_mozprofiledXCBta"
+*** You are running in headless mode.
+1620495382638	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1620495384681	Marionette	INFO	Listening on port 1605
+1620495385084	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://assets.adobedtm.com/9fd06d4068c619c47b289b9c496761efd086a233/satelliteLib-5768eb8c6d43533f225815e1e41f7be236249910.js, line 6: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://assets.adobedtm.com/9fd06d4068c619c47b289b9c496761efd086a233/satelliteLib-5768eb8c6d43533f225815e1e41f7be236249910.js, line 6: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.tatacliq.com/staticweb/cc34fb23d9cti217896746f9e42b665e4, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1620495388883	Marionette	INFO	Stopped listening on port 1605
+1620499437558	geckodriver	INFO	Listening on 127.0.0.1:2811
+1620499440150	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\aadar\\AppData\\Local\\Temp\\rust_mozprofilemI0dSf"
+*** You are running in headless mode.
+1620499442532	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1620499444115	Marionette	INFO	Listening on port 2841
+1620499444315	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://assets.adobedtm.com/9fd06d4068c619c47b289b9c496761efd086a233/satelliteLib-5768eb8c6d43533f225815e1e41f7be236249910.js, line 6: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://assets.adobedtm.com/9fd06d4068c619c47b289b9c496761efd086a233/satelliteLib-5768eb8c6d43533f225815e1e41f7be236249910.js, line 6: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.tatacliq.com/staticweb/cc34fb23d9cti217896746f9e42b665e4, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1620499449512	Marionette	INFO	Stopped listening on port 2841
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1620499511946	geckodriver	INFO	Listening on 127.0.0.1:3004
+1620499514827	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\aadar\\AppData\\Local\\Temp\\rust_mozprofilejwCu6b"
+*** You are running in headless mode.
+1620499515570	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1620499517598	Marionette	INFO	Listening on port 3046
+1620499517975	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://assets.adobedtm.com/9fd06d4068c619c47b289b9c496761efd086a233/satelliteLib-5768eb8c6d43533f225815e1e41f7be236249910.js, line 6: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://assets.adobedtm.com/9fd06d4068c619c47b289b9c496761efd086a233/satelliteLib-5768eb8c6d43533f225815e1e41f7be236249910.js, line 6: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.tatacliq.com/staticweb/cc34fb23d9cti217896746f9e42b665e4, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1620499521696	Marionette	INFO	Stopped listening on port 3046
+1620500131190	geckodriver	INFO	Listening on 127.0.0.1:3267
+1620500133804	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\aadar\\AppData\\Local\\Temp\\rust_mozprofilepTbRMe"
+*** You are running in headless mode.
+1620500134386	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1620500135954	Marionette	INFO	Listening on port 3296
+1620500136648	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://assets.adobedtm.com/9fd06d4068c619c47b289b9c496761efd086a233/satelliteLib-5768eb8c6d43533f225815e1e41f7be236249910.js, line 6: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://assets.adobedtm.com/9fd06d4068c619c47b289b9c496761efd086a233/satelliteLib-5768eb8c6d43533f225815e1e41f7be236249910.js, line 6: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.tatacliq.com/staticweb/cc34fb23d9cti217896746f9e42b665e4, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/production/1.14/od-messaging.main%40v1.14.min.js, line 634: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1620500140680	Marionette	INFO	Stopped listening on port 3296
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

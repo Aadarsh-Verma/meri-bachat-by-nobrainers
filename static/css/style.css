@@ -249,7 +249,7 @@ nav .navbar a:hover {
     display: block;
     width: 100%;
     height: 69px;
-    background-image: url(/static/icons/shadow.svg);
+    /*background-image: url(/static/icons/shadow.svg);*/
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -268,7 +268,7 @@ nav .navbar a:hover {
     display: block;
     width: 100%;
     height: 69px;
-    background-image: url(/static/icons/shadow-sm.svg);
+    /*background-image: url(/static/icons/shadow-sm.svg);*/
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -748,7 +748,7 @@ section.latest-news .article-wrapper {
 
 .latest-news .btn-wrapper {
     margin-top: 2rem;
-
+}
 
 .section.contact-us .map {
     flex: 1;

@@ -12,265 +12,75 @@
     </head>
 
     <body>
-        <div class="main-wrapper">
-            <div class="nav-background">
-                <div class="mobile-logo">
-                    <img src="{% static 'icons/logo.svg' %}" alt="">
-                </div>
-                <div class="mobile-nav">
-                    <div class="cart">
-                        <div class="flex items-center">
-                            <img src="{% static 'icons/cart-dark.svg' %}" alt="">
-                            <a href="#">0 Items - ($0.00)</a>
-                        </div>
-                    </div>
-                    <div class="nav-top">
-                        <ul>
-                            <li>
-                                <a href="#">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">About us</a>
-                            </li>
-                            <li>
-                                <a href="#">Products</a>
-                            </li>
-                            <li>
-                                <a href="#">Blog</a>
-                            </li>
-                            <li>
-                                <a href="#">Shop</a>
-                            </li>
-                            <li>
-                                <a href="#">Services</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact us</a>
-                            </li>
-                            <li>
-                                <a href="#">Log in</a>
-                            </li>
-                            <li>
-                                <a href="#">Register</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="contact flex items-center">
-                        <img src="{% static '/icons/phone.svg' %}" alt="">
-                        <div>
-                            <h5>Call us: (+84) 123 456 789</h5>
-                            <h6>E-mail : support@freshmeal.com</h6>
-                        </div>
-                    </div>
+        <nav>
 
+            <div class="navbar magic-shadow">
+                <div class="container flex justify-center">
+                    <a href="#" class="active">Home</a>
+                    <a href="#">About us</a>
+                    <a href="#">Discounts</a>
+                    <a href="#">Contact us</a>
                 </div>
             </div>
-            <div class="site-content-wrapper">
-                <div class="nav-trigger">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                         class="feather feather-bar-chart">
-                        <line x1="12" y1="20" x2="12" y2="10"/>
-                        <line x1="18" y1="20" x2="18" y2="4"/>
-                        <line x1="6" y1="20" x2="6" y2="16"/>
-                    </svg>
+        </nav>
+
+        <header class="hero flex items-center">
+            <div class="container">
+                <div class="welcome flex items-center">
+                    <h1><span>Welcome to</span></h1>
+                    <img src="{% static 'icons/logo-2.png' %}" alt="">
                 </div>
-                <div class="site-content">
-                                       <header class="topbar">
-                        <div class="container flex justify-between items-center">
-                            <div class="icons">
-                                <a href="#"><img src="{% static 'icons/facebook.svg' %}" alt=""></a>
-                                <a href="#"><img src="{%static 'icons/twitter.svg'%}" alt=""></a>
-                                <a href="#"><img src="{%static 'icons/google.svg'%}" alt=""></a>
-                                <a href="#"><img src="{%static 'icons/instagram.svg'%}" alt=""></a>
-                                <a href="#"><img src="{%static 'icons/search.svg'%}" alt=""></a>
+                <h1>Your's Savings Website</h1>
+
+                <div class="input-wrap">
+                    <form method="post">
+                        {% csrf_token %}
+                        <form>
+
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Enter Product Name</label>
+                                <input type="text" class="form-control" id=""
+                                       placeholder="" name="prd_name">
                             </div>
-                            <div class="auth flex items-center">
-                                <div>
-                                    <img src="{%static 'icons/user-icon.svg'%}" alt="">
-                                    <a href="#">Log in</a>
-                                </div>
-                                <span class="divider">|</span>
-                                <div>
-                                    <img src="{%static 'icons/edit.svg'%}" alt="">
-                                    <a href="#">Register Now</a>
-                                </div>
-                                <span class="divider">|</span>
-                                <div>
-                                    <img src="{%static 'icons/cart.svg'%}" alt="">
-                                    <a href="#">0 Items - ($0.00)</a>
-                                </div>
-                            </div>
-                        </div>
-                    </header>
 
-                    <nav>
-
-                        <div class="navbar magic-shadow">
-                            <div class="container flex justify-center">
-                                <a href="#" class="active">Home</a>
-                                <a href="#">About us</a>
-                                <a href="#">Discounts</a>
-                                <a href="#">Contact us</a>
-                            </div>
-                        </div>
-                    </nav>
-
-                    <header class="hero flex items-center">
-                        <div class="container">
-                            <div class="welcome flex items-center">
-                                <h1><span>Welcome to</span></h1>
-                                <img src="./icons/logo-2.png" alt="">
-                            </div>
-                            <h1>The World Best <span>Shoping</span> Website</h1>
-
-                            <div>
-                                <button class="btn btn-primary">Read More</button>
-                                <button class="btn btn-secondary">Shop Now</button>
-                            </div>
-                            <div class="input-wrap">
-                                <form method="post">
-                                    {% csrf_token %}
-                                    <form>
-
-                                        <div class="form-group">
-                                            <label for="exampleInputPassword1">Name</label>
-                                            <input type="text" class="form-control" id=""
-                                                   placeholder="" name="prd_name">
-                                        </div>
-
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                    </form>
-                                </form>
-                            </div>
-                            <div class="image">
-                                <img src="{%static 'images/straw.png'%}" alt="">
-                            </div>
-                        </div>
-                    </header>
-
-
-                    <section class="about-meribachat">
-                        <div class="container">
-                            <h1 class="section-heading">About Meri Bachat</h1>
-                            <div class="about-meri-wrap flex">
-                                <div class="flex-1">
-                                    <img src="{%static 'images/yogurt.png'%}" alt="">
-                                </div>
-                                <div class="flex-1">
-                                    <h2>MeriBachat Hai Toh Shopping Karo Befikr! </h2>
-
-                                    <p>MeriBachat, as the name suggests, is essentially a Money Saver app designed to
-                                        help you save hundreds and thousands of rupees on every purchase! Wondering how?
-                                        Well, through numerous tools, including but not limited to –</p>
-
-                                    <p>Crazy Cashback Offers</p>
-                                    <p>Dhamakedaar Discounts</p>
-                                    <p>Gainful Gift Card Offers</p>
-                                    <p>Veracious Vouchers</p>
-                                    <p>Captivating Coupons!</p>
-                                    <p>Doesn’t it all seem super exciting?</p>
-                                    <button class="btn btn-secondary">Read More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-
-
-
-                    <section class="latest-news">
-                        <div class="container">
-                            <h1 class="section-heading">Lastest News from Blog</h1>
-                            <div class="article-wrapper">
-                                <article class="card magic-shadow-sm">
-                                    <div>
-                                        <img src="{%static 'images/redmi10.jpg'%}" alt="">
-                                    </div>
-                                    <div class="card-content">
-                                        <div class="post-meta flex items-center justify-between">
-                                            <span>April 09, 2021</span>
-                                            <div>
-                                                <span>Posted by <strong>MeriBachat</strong></span>
-                                                <span class="comment-count">76 Comments</span>
-                                            </div>
-                                        </div>
-
-                                        <h2>Redmi Note 10
-                                            The New Champ10n</h2>
-                                        <p>Redmi Note 10 takes the Champion legacy of the Redmi Note series to a whole
-                                            new level by strengthening the already existing all-round performance with a
-                                            16.33cm(6.43) Super AMOLED Display, 48MP Quad Camera and Corning® Gorilla®
-                                            Glass protection on the Redmi Note 10 protects the device from accidental
-                                            drops and unwanted scratches
-                                        </p>
-                                    </div>
-                                </article>
-                                <article class="card magic-shadow-sm">
-                                    <div>
-                                        <img src="{%static 'images/laptop.jpg'%}" alt="">
-                                    </div>
-                                    <div class="card-content">
-                                        <div class="post-meta flex items-center justify-between">
-                                            <span>April 09, 2021</span>
-                                            <div>
-                                                <span>Posted by <strong>MeriBachat</strong></span>
-                                                <span class="comment-count">100 Comments</span>
-                                            </div>
-                                        </div>
-
-                                        <h2>Latitude 7310 Laptop or 2-in-1</h2>
-                                        <p>Smaller and smarter than ever
-                                            The world's smallest 13-inch premium business laptop.*Featuring
-                                            ExpressSign-In, privacy SafeScreen and first-of-its-kind Dell Optimizer,
-                                            built-in AI that adjusts to the way you work. Configurable as a laptop or
-                                            2-in-1.</p>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="text-center btn-wrapper">
-                                <button class="btn btn-secondary">View All</button>
-                            </div>
-                        </div>
-                    </section>
-
-
-                    <section class="contact-us flex">
-                        <div class="contact-info-wrapper">
-                            <h1 class="section-heading">Contact us</h1>
-                            <div class="contact-info">
-                                <div>
-                                    <div>
-                                        <img src="{%static 'icons/phone-2.svg'%}" alt="">
-                                        <div>
-                                            <span>Call us:</span>
-                                            <span>(+84) 123 456 789</span>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <img src="{%static 'icons/bag-2.svg'%}" alt="">
-                                        <div>
-                                            <span>E-mail ::</span>
-                                            <span>support@meribachat.com</span>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <img src="{%static 'icons/clock-2.svg'%}" alt="">
-                                        <div>
-                                            <span>Working Hours:24/7</span>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </section>
-
-
-
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </form>
+                </div>
+                <div class="image">
+                    <img src="{% static 'images/straw.png' %}" alt="">
                 </div>
             </div>
+        </header>
+
+
+        <section class="about-meribachat">
+            <div class="container">
+                <h1 class="section-heading">About Meri Bachat</h1>
+                <div class="about-meri-wrap flex">
+                    <div class="flex-1">
+                        <img src="{% static 'images/yogurt.png' %}" alt="">
+                    </div>
+                    <div class="flex-1">
+                        <h2>MeriBachat Hai Toh Shopping Karo Befikr! </h2>
+
+                        <p>MeriBachat, as the name suggests, is essentially a Money Saver app designed to
+                            help you save hundreds and thousands of rupees on every purchase! Wondering how?
+                            Well, through numerous tools, including but not limited to –</p>
+
+                        <p>Crazy Cashback Offers</p>
+                        <p>Dhamakedaar Discounts</p>
+                        <p>Gainful Gift Card Offers</p>
+                        <p>Veracious Vouchers</p>
+                        <p>Captivating Coupons!</p>
+                        <p>Doesn’t it all seem super exciting?</p>
+                        <button class="btn btn-secondary">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+        </div>
         </div>
 
 

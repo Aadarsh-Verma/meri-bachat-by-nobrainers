@@ -1,25 +1,30 @@
 {% extends 'base.html' %}
 {% block content %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/my.css' %}">
     <br><br>
     <div class="main_div">
-    {% for meta in metadata %}
-        <div class="row clearfix">
-            <figure class="image_fig">
-                <a href="{% url 'index' meta.mobile.id%}">
-                <img src="{{ meta.images.0 }}" alt="Not rendered" class="left-image">
-                </a>
-            </figure>
-            <div class="right">
-                <h4>{{ meta.mobile.name }}</h4>
-                <p>Rating {{ meta.mobile.rating }}</p>
-                <p>Price {{ meta.mobile.price }} Rs</p>
-                <div class="specs">
-                    {% for spec in meta.specs %}
-                        <h6>{{ spec }}</h6>
-                    {% endfor %}
+        {% for meta in metadata %}
+            <div class="temp">
+                <div class="row">
+                    <figure class="image_fig">
+                        <a href="{% url 'index' meta.mobile.id %}">
+                            <img src="{{ meta.images.0 }}" alt="Not rendered" class="left-image">
+                        </a>
+                    </figure>
+                    <div class="right">
+                        <h4>{{ meta.mobile.name }}</h4>
+                        <span>Rating {{ meta.mobile.rating }}</span>
+                        <span class="price-tag">Price {{ meta.mobile.price }} &#8377</span>
+                        <div class="specs">
+                            {% for spec in meta.specs %}
+                                <p>{{ spec }}</p>
+                            {% endfor %}
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div> <br><br><br><br><br>
-    {% endfor %}
+            </div><br>
+            <hr><br>
+        {% endfor %}
     </div>
 {% endblock %}
